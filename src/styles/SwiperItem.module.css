@@ -1,0 +1,48 @@
+.wrapper {
+  padding: 30px 22px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 261px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper:hover {
+  background-color: var(--color-primary-light);
+  border-radius: 10px;
+}
+
+.wrapper._active {
+  background-color: var(--color-primary-light);
+  background-image: url("../assets/img/services-bg.png");
+  border-radius: 10px;
+}
+
+.icon {
+  width: 83px;
+  height: 83px;
+  border-radius: 51%;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: var(--font-size-h4);
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--text-color-second);
+  text-align: center;
+  line-height: 160%;
+}

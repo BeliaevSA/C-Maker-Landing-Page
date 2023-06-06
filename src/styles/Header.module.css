@@ -1,0 +1,135 @@
+.header {
+  background-color: #f3feff;
+  background-image: url("../assets/img/header-img.png"),
+    url("../assets/img/Background.png");
+  background-size: 735px, 882px;
+  background-repeat: no-repeat;
+  background-position: 50vw 140px, 50vw -10vh;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px 5%;
+}
+
+/*-----------HEADER NAV------------*/
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f3feff;
+  padding: 10px 5%;
+  z-index: 100;
+}
+
+.nav-container {
+  margin: 0 auto;
+  max-width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 37px;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.menu-close {
+  display: none;
+}
+
+.icon-menu-close {
+  font-size: var(--font-size-very-big);
+  cursor: pointer;
+}
+
+.icon-menu {
+  display: none;
+  font-size: var(--font-size-big);
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/*-----------HEADER BODY------------*/
+.body-container {
+  margin: 140px auto 0;
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  max-width: 523px;
+}
+
+.title {
+  color: var(--text-color-first);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.title span {
+  color: var(--color-primary);
+}
+
+.description {
+  font-size: var(--font-size-big);
+  margin-top: 20px;
+  color: var(--text-color-second);
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    background-image: url("../assets/img/Background.png");
+    background-size: 882px;
+    background-repeat: no-repeat;
+    background-position: 50vw -10vh;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 250px;
+    height: 100vh;
+    padding: 50px;
+    align-items: start;
+    background-color: white;
+    flex-direction: column;
+    z-index: 100;
+    transition: all 0.3s linear;
+  }
+
+  .nav-list._active {
+    transform: translateX(-500px);
+  }
+
+  .nav-list li {
+    padding: 20px 0;
+  }
+
+  .menu-close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  .icon-menu {
+    display: block;
+  }
+}

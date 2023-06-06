@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  background-color: var(--color-primary-light);
+  background-image: url("../assets/img/reviews-bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 5%;
+}
+
+.logo {
+  margin-bottom: 40px;
+}
+
+.review {
+  max-width: 1195px;
+  text-align: center;
+  font-size: var(--font-size-very-big);
+  color: var(--text-color-first);
+  line-height: 140%;
+}
+
+.info {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-wrapper {
+  margin-left: 16px;
+}
+
+.name {
+  font-size: var(--font-size-big);
+  font-weight: 500;
+  line-height: 80%;
+  margin-bottom: 12px;
+}
+
+.profi {
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--text-color-second);
+}

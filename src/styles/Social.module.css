@@ -1,0 +1,11 @@
+.icon {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .icon {
+    margin-right: 40px;
+    margin-left: 0;
+  }
+}

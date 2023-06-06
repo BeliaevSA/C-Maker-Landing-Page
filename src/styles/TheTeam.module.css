@@ -1,0 +1,27 @@
+.container {
+  height: 501px;
+  width: 100%;
+  background-image: url(../assets/img/watch-video.png);
+  background-size: cover;
+  padding-top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: var(--font-size-h3);
+  line-height: 120%;
+}
+
+.description {
+  color: white;
+  max-width: 765px;
+  text-align: center;
+  line-height: 160%;
+  margin: 20px 0 36px;
+}
+
+.play {
+}

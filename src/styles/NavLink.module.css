@@ -1,0 +1,20 @@
+.link {
+  font-size: var(--font-size-normal);
+  color: var(--text-color-nav);
+  margin: 0 0 10px 45px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.link:hover,
+.active {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+@media screen and (max-width: 1000px) {
+  .link {
+    margin-left: 0;
+  }
+}
